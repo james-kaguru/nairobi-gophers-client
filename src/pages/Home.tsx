@@ -13,33 +13,53 @@ function Nav() {
   );
 }
 
-function Partners() {
+function Sponsors() {
   return (
-    <section>
-      <div>
-        <h2 className={"text-3xl"}>Sponsors</h2>
-        <p>
+    <section
+      className={"flex flex-row items-center h-[50vh] px-12 gap-[150px]"}
+    >
+      <div className={"w-1/2"}>
+        <h2 className={"text-5xl font-bold text-secondary mb-2"}>Sponsors</h2>
+        <p className={"text-gray-500 mb-5 text-justify"}>
           Attention sponsors! Don't miss this chance to supercharge your brand
           and tap into the vibrant energy of Nairobi's Go programming community.
           Contact us today to explore sponsorship opportunities and join us in
           creating an unforgettable event.
         </p>
+        <button
+          className={
+            "bg-primary text-white px-10 py-5 rounded-[30px] font-bold"
+          }
+        >
+          Sponsor The Event
+        </button>
       </div>
-      <div>
-        <div className={"bg-accent p-3"}>
-          <img
-            src={blackGoLogo}
-            alt={"go lang logo"}
-            className={"object-cover"}
-          />
-        </div>
 
-        <div className={"bg-accent p-3"}>
-          <img
-            src={blackGoLogo}
-            alt={"go lang logo"}
-            className={"object-cover"}
-          />
+      <div className={"flex flex-col w-1/2"}>
+        <div className={"flex flex-row gap-3 overflow-x-scroll w-full px-6"}>
+          <div className={"sponsor-card"}>
+            <img src={blackGoLogo} alt={"go lang logo"} />
+          </div>
+
+          <div className={"sponsor-card"}>
+            <img src={blackGoLogo} alt={"go lang logo"} />
+          </div>
+
+          <div className={"sponsor-card"}>
+            <img src={blackGoLogo} alt={"go lang logo"} />
+          </div>
+
+          <div className={"sponsor-card"}>
+            <img src={blackGoLogo} alt={"go lang logo"} />
+          </div>
+
+          <div className={"sponsor-card"}>
+            <img src={blackGoLogo} alt={"go lang logo"} />
+          </div>
+
+          <div className={"sponsor-card"}>
+            <img src={blackGoLogo} alt={"go lang logo"} />
+          </div>
         </div>
       </div>
     </section>
@@ -76,7 +96,7 @@ function ConnectWithUs() {
           <img
             src={meetupLogo}
             alt={"meetup logo"}
-            className={"object-cover"}
+            className={"object-cover w-36"}
           />
         </a>
 
@@ -92,11 +112,13 @@ export default function Home() {
     <>
       {/*<Nav />*/}
 
-      <section
-        className={"h-[100vh] text-center flex flex-col items-center relative"}
+      <div
+        className={
+          "h-[100vh] text-center flex flex-col items-center relative !w-[100vw]"
+        }
       >
-        <div className={"mt-60"}>
-          <h1 className={"text-7xl font-bold text-secondary mb-1"}>
+        <div className={"mt-40 md:mt-60"}>
+          <h1 className={"text-4xl md:text-7xl font-bold text-secondary mb-1"}>
             Gophercon Africa
           </h1>
           <p className={"max-w-[800px] m-auto text-gray-500 mb-5"}>
@@ -105,19 +127,21 @@ export default function Home() {
             thrilling event in <b>Nairobi,Kenya.</b>
           </p>
           <button
-            className={"px-6 py-4 bg-primary text-white font-bold text-lg"}
+            className={"px-6 py-4 bg-primary text-white font-bold md:text-lg"}
           >
             Tickets Coming soon
           </button>
         </div>
+
         <img
           src={waves}
           alt={"waves"}
-          className={"absolute object-cover bg-no-repeat bottom-0 w-full"}
+          className={"absolute bottom-0 h-100px w-full object-cover"}
+          // className={"absolute object-fill md:object-cover bottom-0 md:w-full"}
         />
-      </section>
+      </div>
 
-      <Partners />
+      <Sponsors />
 
       <CallForSpeakers />
 

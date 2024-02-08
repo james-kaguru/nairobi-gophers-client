@@ -16,4 +16,9 @@
     .sponsor-card img {
         @apply object-cover m-auto w-full
     }
+
+
+    .section-button {
+        @apply bg-primary text-white px-10 py-5 rounded-[30px] font-bold mb-3 capitalize
+    }
 }

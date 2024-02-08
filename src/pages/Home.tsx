@@ -16,10 +16,14 @@ function Nav() {
 function Sponsors() {
   return (
     <section
-      className={"flex flex-row items-center h-[50vh] px-12 gap-[150px]"}
+      className={
+        "pt-6 md:flex md:flex-row items-center md:h-[50vh] md:px-12 md:gap-[150px]"
+      }
     >
-      <div className={"w-1/2"}>
-        <h2 className={"text-5xl font-bold text-secondary mb-2"}>Sponsors</h2>
+      <div className={"md:w-1/2 text-center md:text-left"}>
+        <h2 className={"text-4xl  md:text-5xl font-bold text-secondary mb-2"}>
+          Sponsors
+        </h2>
         <p className={"text-gray-500 mb-5 text-justify"}>
           Attention sponsors! Don't miss this chance to supercharge your brand
           and tap into the vibrant energy of Nairobi's Go programming community.
@@ -28,31 +32,19 @@ function Sponsors() {
         </p>
         <button
           className={
-            "bg-primary text-white px-10 py-5 rounded-[30px] font-bold"
+            "bg-primary text-white px-10 py-5 rounded-[30px] font-bold mb-3"
           }
         >
           Sponsor The Event
         </button>
       </div>
 
-      <div className={"flex flex-col w-1/2"}>
-        <div className={"flex flex-row gap-3 overflow-x-scroll w-full px-6"}>
-          <div className={"sponsor-card"}>
-            <img src={blackGoLogo} alt={"go lang logo"} />
-          </div>
-
-          <div className={"sponsor-card"}>
-            <img src={blackGoLogo} alt={"go lang logo"} />
-          </div>
-
-          <div className={"sponsor-card"}>
-            <img src={blackGoLogo} alt={"go lang logo"} />
-          </div>
-
-          <div className={"sponsor-card"}>
-            <img src={blackGoLogo} alt={"go lang logo"} />
-          </div>
-
+      <div className={"flex flex-col md:w-1/2"}>
+        <div
+          className={
+            "flex flex-col md:flex-row gap-3 overflow-x-scroll w-full md:px-6"
+          }
+        >
           <div className={"sponsor-card"}>
             <img src={blackGoLogo} alt={"go lang logo"} />
           </div>

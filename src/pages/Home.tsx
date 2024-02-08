@@ -5,15 +5,15 @@ import waves from "../assets/waves.svg";
 import speakersImage from "../assets/speakersImage.png";
 import phoneWave from "../assets/phoneWave.svg";
 
-function Nav() {
-  return (
-    <nav className={"p-3 flex flex-row items-center justify-start"}>
-      <a href="/" className={"text-primary border-b-2 border-primary p-2"}>
-        Home
-      </a>
-    </nav>
-  );
-}
+// function Nav() {
+//   return (
+//     <nav className={"p-3 flex flex-row items-center justify-start"}>
+//       <a href="/" className={"text-primary border-b-2 border-primary p-2"}>
+//         Home
+//       </a>
+//     </nav>
+//   );
+// }
 
 function Sponsors() {
   return (

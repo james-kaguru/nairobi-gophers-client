@@ -1,11 +1,14 @@
 import blackGoLogo from "../assets/blackGoLogo.png";
 import meetupLogo from "../assets/meetupLogo.png";
 import xLogo from "../assets/xLogo.png";
+import waves from "../assets/waves.svg";
 
 function Nav() {
   return (
-    <nav>
-      <a href="/">Home</a>
+    <nav className={"p-3 flex flex-row items-center justify-start"}>
+      <a href="/" className={"text-primary border-b-2 border-primary p-2"}>
+        Home
+      </a>
     </nav>
   );
 }
@@ -14,7 +17,7 @@ function Partners() {
   return (
     <section>
       <div>
-        <h2>Sponsors</h2>
+        <h2 className={"text-3xl"}>Sponsors</h2>
         <p>
           Attention sponsors! Don't miss this chance to supercharge your brand
           and tap into the vibrant energy of Nairobi's Go programming community.
@@ -87,16 +90,32 @@ function ConnectWithUs() {
 export default function Home() {
   return (
     <>
-      <Nav />
-      <h1>Gophercon Africa</h1>
-      <p>
-        The Gophercon Africa event is here, bringing together the content's top
-        Go programming enthusiasts for an exciting day of collaboration,
-        learning, and networking. This year's event promises cutting-edge talks,
-        engaging workshops, and the chance to connect with like-minded
-        individuals shaping the future of technology.
-      </p>
-      <button>Tickets Coming soon</button>
+      {/*<Nav />*/}
+
+      <section
+        className={"h-[100vh] text-center flex flex-col items-center relative"}
+      >
+        <div className={"mt-60"}>
+          <h1 className={"text-7xl font-bold text-secondary mb-1"}>
+            Gophercon Africa
+          </h1>
+          <p className={"max-w-[800px] m-auto text-gray-500 mb-5"}>
+            The 1st Gophercon Africa event is here, bringing together the
+            continent's top Go programming enthusiasts to for an <b>2 day</b>{" "}
+            thrilling event in <b>Nairobi,Kenya.</b>
+          </p>
+          <button
+            className={"px-6 py-4 bg-primary text-white font-bold text-lg"}
+          >
+            Tickets Coming soon
+          </button>
+        </div>
+        <img
+          src={waves}
+          alt={"waves"}
+          className={"absolute object-cover bg-no-repeat bottom-0 w-full"}
+        />
+      </section>
 
       <Partners />
 
